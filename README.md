@@ -510,7 +510,7 @@ ALTER TABLE public.FACT_price_paid ALTER COLUMN location_id SET DATA TYPE INT; -
 ALTER TABLE public.DIM_location ALTER COLUMN paon SET DATA TYPE VARCHAR(100); -- VARCHAR(50) was too small
 ALTER TABLE public.DIM_location ALTER COLUMN saon SET DATA TYPE VARCHAR(100); -- VARCHAR(50) was too small
 ```
-The corresponding file can be accessed here: [View Table Creation File](4_sql_load\2_create_tables.sql)
+The corresponding file can be accessed here: [View Table Creation File](4_sql_load/2_create_tables.sql)
 
 ## Load Data Into Tables
 
@@ -541,7 +541,7 @@ COPY public.FACT_price_paid
 FROM 'C:\tmp\3. ddm_csv_files\FACT_price_paid.csv'
 DELIMITER ',' CSV HEADER;
 ```
-The corresponding file can be accessed here: [View DDM Load File](4_sql_load\3_load_ddm_csv.sql)
+The corresponding file can be accessed here: [View DDM Load File](4_sql_load/3_load_ddm_csv.sql)
 
 With this, a functional relational database was created, in which we quereis can be run against it for the sake of gaining insights into UK property sales prices.
 
@@ -950,7 +950,7 @@ GROUP BY du.duration
 ```
 **NOTE**: The same can also be done for volume of transactions by replacing 'AVG(f.price) AS avg_price' with 'COUNT(f.transaction_id) AS number_of_transactions'. 
 
-View the workbook with the full breakdown of each query made here: [Duration Workbook](5_project_queries/4_duration_impact)
+View the workbook with the full breakdown of each query made here: [Duration Workbook](5_project_queries/4_duration_impact.sql)
 
 ### Dashboard Reference: Visualisations
 
