@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "hmlr_price_paid_project",
+            "group": "hmlr_price_paid_project",
+            "database": "hmlr_price_paid_project",
+            "username": "postgres"
+        }
+    ]
+}
